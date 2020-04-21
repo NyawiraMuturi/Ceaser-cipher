@@ -10,7 +10,7 @@ public class App {
             int choice = sc.nextInt();
             Cipher caeser = new Cipher();
             if (choice == 1) {
-                System.out.println("Enter the String for Encryption: ");
+                System.out.println("What message would you like encrypted?: ");
                 String message = new String();
                 message = sc.next();
                 System.out.println("Enter Key");
@@ -18,7 +18,7 @@ public class App {
                 System.out.println(caeser.encrypt(message, shiftKey));
 
             } else if (choice == 2) {
-                System.out.println("Enter the String for Decryption: ");
+                System.out.println("What message would you like decripted? : ");
                 String message = new String();
                 message = sc.next();
                 System.out.println("Enter Key");
