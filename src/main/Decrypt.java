@@ -1,8 +1,13 @@
 package Decrypt;
 
 public class Decrypt{
+    private String mMessage;
+    private int mKey;
 
     public static String decrypt(String plainText, int shift) {
+        this.mMessage = plainText;
+        this.mKey = shift;
+
         if(shift>26){
             shift = shift%26;
         }
@@ -39,5 +44,11 @@ public class Decrypt{
             }
         }
         return cipherText;
+    }
+
+    public static void main(String[] args){
+        String text = "This some message";
+        String cipher = encrypt(text, 5);
+        system.out.println(cipher);
     }
 }

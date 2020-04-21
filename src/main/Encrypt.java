@@ -3,6 +3,7 @@ package Encrypt;
 public class Encrypt{
 
     public static String encrypt(String plainText, int shift) {
+
         if(shift>26){
             shift = shift%26;
         }
@@ -12,7 +13,7 @@ public class Encrypt{
 
         String cipherText = "";
         int length = plainText.length();
-        for(int i = 0, i<length, i++){
+        for(int i = 0; i<length; i++){
             char ch = plainText.charAt(i);
             if(Character.isletter(ch)){
                 if(Character.isLowerCase(ch)){
@@ -39,5 +40,10 @@ public class Encrypt{
             }
         }
         return cipherText;
+    }
+    public static void main(String[] args){
+        String text = "This some message";
+        String cipher = encrypt(text, 5);
+        System.out.println(cipher);
     }
 }
