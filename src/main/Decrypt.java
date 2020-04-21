@@ -4,6 +4,14 @@ public class Decrypt{
     private String mMessage;
     private int mKey;
 
+    public int getmKey() {
+        return mKey;
+    }
+
+    public String getmMessage() {
+        return mMessage;
+    }
+
     public static String decrypt(String plainText, int shift) {
         this.mMessage = plainText;
         this.mKey = shift;
