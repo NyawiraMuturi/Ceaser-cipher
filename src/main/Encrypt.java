@@ -34,6 +34,9 @@ public class Encrypt{
                     }
                 }
             }
+            else {
+                cipherText += ch;
+            }
         }
         return cipherText;
     }
