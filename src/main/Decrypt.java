@@ -47,8 +47,8 @@ public class Decrypt{
     }
 
     public static void main(String[] args){
-        String text = "This some message";
-        String cipher = encrypt(text, 5);
+        String text = "djdfk dkoe kdkm";
+        String cipher = decrypt(text, 5);
         system.out.println(cipher);
     }
 }
